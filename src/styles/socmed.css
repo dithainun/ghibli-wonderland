@@ -46,7 +46,8 @@ main {
     height: 75%;
     animation-name: fade;
     animation-duration: 3s;
-    animation-fill-mode: infinite;
+    animation-fill-mode: forwards;
+    padding-bottom: 50px;
 }
 
 main h2 {
