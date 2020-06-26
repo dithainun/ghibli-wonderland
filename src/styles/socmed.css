@@ -107,3 +107,28 @@ footer {
         transform: scale(1.1);
     }
 }
+
+@media screen and (max-width: 800px) {
+    header {
+        text-align: center;
+    }
+    .menu {
+        display: block;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    figure {
+        padding-bottom: 30px;
+    }
+    figure img {
+        width: 210px;
+        height: 140px;
+        border-radius: 25%;
+    }
+
+    figcaption {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
