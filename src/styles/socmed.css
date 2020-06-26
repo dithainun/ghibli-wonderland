@@ -78,9 +78,9 @@ figure:hover {
 }
 
 figure img {
-    width: 300px;
+    width: 200px;
     height: 200px;
-    border-radius: 25%;
+    border-radius: 50%;
 }
 
 figcaption {
