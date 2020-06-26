@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/8e/1d/11/8e1d112d5fd22861ddc2cb8181f652b9.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+header {
+    color: white;
+    font-family: 'Cairo', sans-serif;    
+    display: flex;        
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1{
+    flex-basis: 60%;
+}
+
+nav ul {
+    padding-top: 15px;
+}
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 2rem;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5%;
+    border-radius: 10px;
+    width: 90%;
+    height: 75%;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: infinite;
+    padding-bottom: 50px;
+}
+
+main h2 {
+    font-family: 'Cairoo', sans-serif;
+    text-align : center;
+    color: brown;
+    padding-top: 10px;
+}
+
+figure {
+    position: relative;
+    font-family: 'Cairoo', sans-serif;
+    color: black;
+    font-weight: bold;
+    top: 50px;
+    text-align: center;
+}
+
+figure:hover {
+    animation-name: fig-fade;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+figure img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+figcaption {
+    padding: 20px;
+}
+
+footer {
+    color: white;
+    font-size: 10px;
+    margin: 30px 0 0 5%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fig-fade {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        text-align: center;
+        display: block;
+    }
+    nav li {
+        padding-right: 1em;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    main {
+        width: 100%;
+    }
+}
